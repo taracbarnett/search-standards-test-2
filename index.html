@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOLIO Search Documentation</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.0/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">FOLIO Search Documentation</span>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <ul class="nav nav-tabs" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="behavior-tab" data-bs-toggle="tab" data-bs-target="#behavior-pane" 
+                        type="button" role="tab" aria-controls="behavior-pane" aria-selected="true">
+                    Search Behavior by Field
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="compliance-tab" data-bs-toggle="tab" data-bs-target="#compliance-pane" 
+                        type="button" role="tab" aria-controls="compliance-pane" aria-selected="false">
+                    Search Standards Compliance
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="mainTabsContent">
+            <!-- Search Behavior by Field Tab -->
+            <div class="tab-pane fade show active" id="behavior-pane" role="tabpanel" aria-labelledby="behavior-tab">
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">Search Filters</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="moduleSelect" class="form-label">Module/App</label>
+                                    <select class="form-select" id="moduleSelect">
+                                        <option value="">All Modules</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="fieldSearch" class="form-label">Field Name</label>
+                                    <input type="text" class="form-control" id="fieldSearch" placeholder="Search field names...">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="fieldSelect" class="form-label">Available Fields</label>
+                                    <select class="form-select" id="fieldSelect" size="10">
+                                        <option value="">Select a field...</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-outline-secondary w-100" onclick="resetBehaviorSearch()">Reset Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="behaviorResults">
+                            <div class="text-center text-muted mt-5">
+                                <h4>Select a field to view its search behavior analysis</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Standards Compliance Tab -->
+            <div class="tab-pane fade" id="compliance-pane" role="tabpanel" aria-labelledby="compliance-tab">
+                <div class="row mt-3">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">Standards</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="standardSelect" class="form-label">Select Standard</label>
+                                    <select class="form-select" id="standardSelect">
+                                        <option value="">Choose a standard...</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-outline-secondary w-100" onclick="resetComplianceSearch()">Reset Search</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Table Filters Card -->
+                        <div class="card mt-3" id="tableFiltersCard" style="display: none;">
+                            <div class="card-header">
+                                <h5 class="mb-0">Table Filters</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="tableFieldFilter" class="form-label">Field Name</label>
+                                    <input type="text" class="form-control" id="tableFieldFilter" placeholder="Filter by field name...">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="tableModuleFilter" class="form-label">Module</label>
+                                    <select class="form-select" id="tableModuleFilter">
+                                        <option value="">All Modules</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="complianceFilter" class="form-label">Compliance Status</label>
+                                    <select class="form-select" id="complianceFilter">
+                                        <option value="">All Statuses</option>
+                                        <option value="full">Full Compliance</option>
+                                        <option value="partial">Partial Compliance</option>
+                                        <option value="none">No Compliance</option>
+                                        <option value="unknown">Unknown</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-outline-secondary w-100" onclick="resetTableFilters()">Clear Filters</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div id="complianceResults">
+                            <div class="text-center text-muted mt-5">
+                                <h4>Select a standard to view compliance data</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
