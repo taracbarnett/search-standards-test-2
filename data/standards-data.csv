@@ -1,0 +1,4 @@
+standardName,standardDefinition,wikiLink,jiraLink
+Wildcard Searching,Wildcard searching should be standard across all search fields to allow flexible pattern matching,https://folio-org.atlassian.net/wiki/spaces/AppInt/pages/4098958/Search+expectations+across+apps,https://folio-org.atlassian.net/browse/UXPROD-4545
+Advanced Search Features,Advanced search capabilities including boolean operators and phrase searching,https://folio-org.atlassian.net/wiki/spaces/AppInt/pages/4098958/Search+expectations+across+apps,https://folio-org.atlassian.net/browse/UXPROD-4546
+Basic Search Behavior,Fundamental search behaviors that should be consistent across all modules,https://folio-org.atlassian.net/wiki/spaces/AppInt/pages/4098958/Search+expectations+across+apps,https://folio-org.atlassian.net/browse/UXPROD-4547
