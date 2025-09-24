@@ -1,11 +1,6 @@
 standardComponent,standardName,definition
 Wildcards should use * for Multicharacter Searches,Wildcard Searching,The asterisk (*) should replace zero or more characters in search terms
 Wildcards should use ? for single character replacement,Wildcard Searching,The question mark (?) should replace exactly one character in search terms  
-Wildcards also do this thing,Wildcard Searching,Additional wildcard functionality for advanced pattern matching
-Supports exact phrase searching,Advanced Search Features,Users should be able to search for exact phrases using quotation marks
-Boolean operators (AND OR NOT),Advanced Search Features,Support for boolean logic in search queries to combine or exclude terms
-Range searching,Advanced Search Features,Ability to search within specified ranges (dates numbers etc.)
-Second search 1,Basic Search Behavior,Core search functionality component one
-Second search 2,Basic Search Behavior,Core search functionality component two  
-Third search 1,Basic Search Behavior,Additional basic search behavior requirement
-Case-insensitive searching,Basic Search Behavior,Search should not be case-sensitive by default
+A Wildcard character (*) can be used to return all results,Wildcard Searching,Using * as a search should return all records
+Case-insensitive searching for general searches,Case Sensitive Searching,Search should not be case-sensitive by default
+Case sensitive searching for exact phrase searches,Case Sensitive Searching,Search should be case sensitive for exact phrase searches.
