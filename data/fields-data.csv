@@ -1,14 +1,14 @@
-fieldName,module,snapshotLink,screenshot,Wildcards should use * for Multicharacter Searches,Wildcards should use ? for single character replacement,Wildcards also do this thing,Second search 1,Second search 2,Third search 1,Supports exact phrase searching,Case-insensitive searching,Boolean operators (AND OR NOT),Range searching
-Add contacts modal search,Add contacts modal,,https://placehold.co/600x300/4C7EA5/FFFFFF?text=Add+Contacts+Modal+Search,TRUE,TRUE,,TRUE,other text,FALSE,TRUE,FALSE,partial support,
-Item Barcode,Circulation log,https://folio-snapshot.dev.folio.org/some-page,https://placehold.co/600x300/5D6883/FFFFFF?text=Item+Barcode+Field,FALSE,TRUE,partial support,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,limited support
-User Search,Users,https://folio-snapshot.dev.folio.org/users,https://placehold.co/600x300/FF674C/FFFFFF?text=User+Search+Interface,TRUE,FALSE,TRUE,TRUE,FALSE,needs improvement,FALSE,TRUE,TRUE,FALSE
-Title Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,,TRUE,TRUE,FALSE,not implemented,TRUE,TRUE,TRUE,TRUE,full support,TRUE
-Author Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,https://placehold.co/600x300/EFEFEF/3B3B3B?text=Author+Search+Field,FALSE,FALSE,under development,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,
-Patron Search,Check out,,https://dummyimage.com/600x300/4C7EA5/FFFFFF&text=Patron+Search,TRUE,TRUE,TRUE,FALSE,experimental,TRUE,FALSE,TRUE,,FALSE
-Location Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,,TRUE,TRUE,in progress,TRUE,TRUE,FALSE,TRUE,TRUE,partial,TRUE
-Call Number Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,https://placehold.co/600x300/5D6883/FFFFFF?text=Call+Number+Search,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE
-ISBN Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,,TRUE,FALSE,TRUE,FALSE,TRUE,needs work,TRUE,TRUE,FALSE,
-ISSN Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,https://placehold.co/600x300/FF674C/FFFFFF?text=ISSN+Search,TRUE,TRUE,FALSE,TRUE,partial,TRUE,TRUE,FALSE,TRUE,TRUE
-Course Search,Courses,,https://placehold.co/600x300/4C7EA5/FFFFFF?text=Course+Search,FALSE,FALSE,not supported,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE
-Instructor Search,Courses,https://folio-snapshot.dev.folio.org/courses,,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,experimental,
-Reserve Search,Courses,https://folio-snapshot.dev.folio.org/courses,https://placehold.co/600x300/EFEFEF/3B3B3B?text=Reserve+Search,TRUE,FALSE,partial,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE
+fieldName,module,snapshotLink,screenshot,Wildcards should use * for Multicharacter Searches,Wildcards should use ? for single character replacement,A Wildcard character (*) can be used to return all results,Case-insensitive searching for general searches,Case sensitive searching for exact phrase searches
+Add contacts modal search,Add contacts modal,,,TRUE,TRUE,,TRUE,other text
+Item Barcode,Circulation log,https://folio-snapshot.dev.folio.org/some-page,blob:https://folio-org.atlassian.net/e34a4221-ccd6-4125-a7d0-e4269a602663#media-blob-url=true&id=73bc5b4b-7934-4600-abf8-7dee9d112892&collection=contentId-755073025&contextId=755073025&mimeType=image%2Fpng&name=Screenshot%202025-01-26%20at%202.46.01%E2%80%AFPM%202.png&size=178912&width=1064&height=600&alt=,FALSE,This is not needed for item barcode,partial support,FALSE,TRUE
+User Search,Users,https://folio-snapshot.dev.folio.org/users,,TRUE,FALSE,TRUE,TRUE,FALSE
+Title Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,,TRUE,TRUE,FALSE,not implemented,TRUE
+Author Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,,FALSE,FALSE,under development,TRUE,TRUE
+Patron Search,Check out,,,TRUE,TRUE,TRUE,FALSE,experimental
+Location Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,,TRUE,TRUE,in progress,TRUE,
+Call Number Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,,FALSE,TRUE,FALSE,TRUE,
+ISBN Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,,TRUE,FALSE,TRUE,FALSE,
+ISSN Search,Inventory,https://folio-snapshot.dev.folio.org/inventory,,TRUE,TRUE,FALSE,TRUE,partial
+Course Search,Courses,,,FALSE,FALSE,not supported,FALSE,TRUE
+Instructor Search,Courses,https://folio-snapshot.dev.folio.org/courses,,TRUE,TRUE,TRUE,TRUE,FALSE
+Reserve Search,Courses,https://folio-snapshot.dev.folio.org/courses,,TRUE,FALSE,partial,FALSE,TRUE
